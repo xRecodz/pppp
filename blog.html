@@ -159,12 +159,18 @@
 
     .button-container .button {
       text-align: center;
+      width: 300px; /* Sesuaikan lebar container tombol */
     }
 
     .button img {
-      width: 100px; /* Sesuaikan ukuran gambar dengan kebutuhan */
-      height: auto;
-      margin-bottom: 10px;
+      width: 100%; /* Ukuran gambar sesuai lebar container */
+      height: 225px; /* Ukuran tinggi gambar */
+      object-fit: cover; /* Memastikan gambar terisi sesuai proporsi */
+      border-radius: 5px; /* Corner radius */
+    }
+
+    .button p {
+      margin-top: 10px; /* Jarak antara teks dengan gambar */
     }
   </style>
 </head>

@@ -122,11 +122,28 @@
       font-size: 0.8em; /* Ukuran font kecil untuk ikon */
       display: block; /* Membuat ikon menjadi blok untuk mengatur ukuran */
     }
+
+    .footer-icons img {
+      width: 30px; /* Ukuran gambar logo di footer */
+    }
     
     .footer-copyright {
       margin-top: 20px;
       font-size: 0.8em;
       color: #000000;
+    }
+
+    /* Animasi untuk gambar */
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
 
     /* Media Query untuk layar dengan lebar maksimum 600px */
@@ -162,7 +179,7 @@
   </header>
 
   <section class="content">
-    <img src="/images/s2.png" alt="Service Boost" style="width: 100%; max-width: 400px;">
+    <img src="/images/s2.png" alt="images" style="width: 100%; max-width: 400px; animation: moveUpDown 2s ease-in-out infinite;">
     <p>We serve as a community manager or service boost for the community.</p>
     <button class="learn-button">Hire me</button>
   </section>
