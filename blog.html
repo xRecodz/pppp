@@ -76,6 +76,7 @@
       line-height: 1.5;
       color: #000000;
       margin-bottom: 20px;
+      margin-top: 10px; /* Tambahkan jarak ke atas */
     }
     
     .learn-button {
@@ -147,6 +148,24 @@
         margin-right: 10px;
       }
     }
+
+    /* CSS tambahan untuk tombol dengan gambar */
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      width: 80%; /* Sesuaikan lebar dengan kebutuhan */
+    }
+
+    .button-container .button {
+      text-align: center;
+    }
+
+    .button img {
+      width: 100px; /* Sesuaikan ukuran gambar dengan kebutuhan */
+      height: auto;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
@@ -154,17 +173,59 @@
     <div class="header-content">
       <h1 class="xquisite-logo">Xquisite</h1>
       <div class="header-menu">
-        <a href="index.html">Home</a>
-        <a href="service.html">Service</a>
-        <a href="blog.html">Blog</a>
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Blog</a>
       </div>
     </div>
   </header>
 
   <section class="content">
-    <p>Xquisite</p>
-    <p>Full technical support, Community builder, Translations and Services boosting the potential of Project and Community.</p>
-    <button class="learn-button">Learn with us</button>
+    <p>Our Blog</p>
+
+    <div class="button-container">
+      <div class="button">
+        <a href="/blog/Pintu.html">
+          <img src="/images/pintu.png" alt="Pintu">
+          <p>Pintu</p>
+        </a>
+      </div>
+      <div class="button">
+        <a href="link-ke-halaman-why-crypto">
+          <img src="/images/button2.png" alt="Button 2">
+          <p>Why crypto?</p>
+        </a>
+      </div>
+      <div class="button">
+        <a href="link-ke-halaman-belajar-trading">
+          <img src="/images/button3.png" alt="Button 3">
+          <p>Belajar trading untuk pemula</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="button-container">
+      <div class="button">
+        <a href="/blog/abc.html">
+          <img src="/images/pintu.png" alt="abc">
+          <p>abc</p>
+        </a>
+      </div>
+      <div class="button">
+        <a href="/blog/xx.html">
+          <img src="/images/pintu.png" alt="xx">
+          <p>xx</p>
+        </a>
+      </div>
+      <div class="button">
+        <a href="/blog/xxx.html">
+          <img src="/images/pintu.png" alt="xxx">
+          <p>xxx</p>
+        </a>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
